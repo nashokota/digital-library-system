@@ -7,9 +7,13 @@ public class ProxyEBook implements IEBook {
         this.realEBook = null;
     }
 
+
     public String getTitle() {
         return fileName;
     }
+    public void getSize() {
+        System.out.println("Size of eBook '" + fileName + "' is 2MB.");
+     }
 
     @Override
     public void display() {
