@@ -7,6 +7,10 @@ public class ProxyEBook implements IEBook {
         this.realEBook = null;
     }
 
+    public String getTitle() {
+        return fileName;
+    }
+
     @Override
     public void display() {
         if (realEBook == null) {
